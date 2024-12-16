@@ -8,6 +8,7 @@ const database = require('./config/database');
 
 const userRoutes = require('./routes/user.routes');
 const captainRoutes = require('./routes/captain.routes');
+const mapsRoute = require('./routes/maps.routes');
 
 // connect to database
 database.connect();
@@ -24,6 +25,7 @@ app.get('/', (req, res) => {
 
 // mount routes
 app.use('/api/v1/user', userRoutes);
-app.use('/captains', captainRoutes);
+app.use('/api/v1/captains', captainRoutes);
+app.use('/api/v1/maps', mapsRoute);
 
 module.exports = app;
