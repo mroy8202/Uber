@@ -6,7 +6,8 @@ const cors = require('cors');
 const app = express();
 const database = require('./config/database');
 
-const userRoutes = require('./routes/user.routes')
+const userRoutes = require('./routes/user.routes');
+const captainRoutes = require('./routes/captain.routes');
 
 // connect to database
 database.connect();
@@ -21,6 +22,8 @@ app.get('/', (req, res) => {
     res.send('Hello World');
 });
 
+// mount routes
 app.use('/api/v1/user', userRoutes);
+app.use('/captains', captainRoutes);
 
 module.exports = app;
