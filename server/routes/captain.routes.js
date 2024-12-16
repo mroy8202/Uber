@@ -24,3 +24,9 @@ router.post('/login', [
 ],
     captainController.loginCaptain
 )
+
+// captainProfile route
+router.get('/profile', authMiddleware.authCaptain, captainController.getCaptainProfile)
+
+// logoutCaptain route
+router.get('/logout', authMiddleware.authCaptain, captainController.logoutCaptain)
