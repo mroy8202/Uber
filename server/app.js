@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 });
 
 // mount routes
-app.use('/api/v1/user', userRoutes);
+app.use('/api/v1/users', userRoutes);
 app.use('/api/v1/captains', captainRoutes);
 app.use('/api/v1/maps', mapsRoute);
 app.use('/api/v1/rides', rideRoutes);
