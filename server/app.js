@@ -25,9 +25,9 @@ app.get('/', (req, res) => {
 });
 
 // mount routes
-app.use('/api/v1/users', userRoutes);
-app.use('/api/v1/captains', captainRoutes);
-app.use('/api/v1/maps', mapsRoute);
-app.use('/api/v1/rides', rideRoutes);
+app.use('/users', userRoutes);
+app.use('/captains', captainRoutes);
+app.use('/maps', mapsRoute);
+app.use('/rides', rideRoutes);
 
 module.exports = app;
