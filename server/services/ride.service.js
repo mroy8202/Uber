@@ -49,7 +49,7 @@ module.exports.createRide = async ({ user, pickup, destination, vehicleType }) =
         throw new Error('All fields are required');
     }
 
-    const fare = await getFare(pickup, destination);
+    const fare = await module.exports.getFare(pickup, destination);
 
     const ride = rideModel.create({
         user,
