@@ -126,6 +126,7 @@ Create a `.env` file in the `client` directory and include the following variabl
 
 ```env
 VITE_BASE_URL=<Your Backend Base URL>
+VITE_GOOGLE_MAPS_API_KEY=<Your Google Maps API Key>
 ```
 
 ---
