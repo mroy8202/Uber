@@ -86,7 +86,6 @@ This repository contains the source code for an **Uber application**. It consist
    ### Frontend:
 
    ```bash
-   cd client
    npm install
    ```
 
@@ -159,28 +158,28 @@ VITE_GOOGLE_MAPS_API_KEY=<Your Google Maps API Key>
 
 ### User Routes:
 
-- `POST /api/v1/users/register`: Register a new user.
-- `POST /api/v1/users/login`: Login as a user.
-- `GET /api/v1/users/profile`: Get user profile (protected).
-- `GET /api/v1/users/logout`: Logout user.
+- `POST /users/register`: Register a new user.
+- `POST /users/login`: Login as a user.
+- `GET /users/profile`: Get user profile (protected).
+- `GET /users/logout`: Logout user.
 
 ### Captain Routes:
 
-- `POST /api/v1/captains/register`: Register a new captain.
-- `POST /api/v1/captains/login`: Login as a captain.
-- `GET /api/v1/captains/profile`: Get captain profile (protected).
-- `GET /api/v1/captains/logout`: Logout captain.
+- `POST /captains/register`: Register a new captain.
+- `POST /captains/login`: Login as a captain.
+- `GET /captains/profile`: Get captain profile (protected).
+- `GET /captains/logout`: Logout captain.
 
 ### Ride Routes:
 
-- `POST /api/v1/rides/create`: Create a new ride.
-- `GET /api/v1/rides/get-fare`: Get fare estimate.
-- `POST /api/v1/rides/confirm`: Confirm a ride (captain only).
-- `GET /api/v1/rides/start-ride`: Start a ride (captain only).
-- `POST /api/v1/rides/end-ride`: End a ride (captain only).
+- `POST /rides/create`: Create a new ride.
+- `GET /rides/get-fare`: Get fare estimate.
+- `POST /rides/confirm`: Confirm a ride (captain only).
+- `GET /rides/start-ride`: Start a ride (captain only).
+- `POST /rides/end-ride`: End a ride (captain only).
 
 ### Maps Routes:
 
-- `GET /api/v1/maps/get-coordinates`: Get coordinates for an address.
-- `GET /api/v1/maps/get-distance-time`: Get distance and travel time between locations.
-- `GET /api/v1/maps/get-suggestions`: Get location suggestions.
+- `GET /maps/get-coordinates`: Get coordinates for an address.
+- `GET /maps/get-distance-time`: Get distance and travel time between locations.
+- `GET /maps/get-suggestions`: Get location suggestions.
