@@ -8,7 +8,7 @@ import UserSignup from './pages/UserSignup';
 import Captainlogin from './pages/Captainlogin';
 import CaptainSignup from './pages/CaptainSignup';
 import Home from './pages/Home';
-import UserProtectWrapper from './pages/UserProtectWrapper';
+import UserProtectedWrapper from './pages/UserProtectedWrapper';
 import UserLogout from './pages/UserLogout';
 import CaptainHome from './pages/CaptainHome';
 import CaptainProtectedWrapper from './pages/CaptainProtectedWrapper';
@@ -42,18 +42,18 @@ const App = () => {
         {/* Protected route for the user home page */}
         <Route path='/home'
           element={
-            <UserProtectWrapper>
+            <UserProtectedWrapper>
               <Home />
-            </UserProtectWrapper>
+            </UserProtectedWrapper>
           } 
         />
 
         {/* Protected route for user logout */}
         <Route path='/user/logout'
           element={
-            <UserProtectWrapper>
+            <UserProtectedWrapper>
               <UserLogout />
-            </UserProtectWrapper>
+            </UserProtectedWrapper>
           } 
         />
 
