@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import Start from './pages/Start';
 import UserLogin from './pages/UserLogin';
 import UserSignup from './pages/UserSignup';
-import Captainlogin from './pages/Captainlogin';
+import CaptainLogin from './pages/CaptainLogin';
 import CaptainSignup from './pages/CaptainSignup';
 import Home from './pages/Home';
 import UserProtectedWrapper from './pages/UserProtectedWrapper';
@@ -32,7 +32,7 @@ const App = () => {
         <Route path='/signup' element={<UserSignup />} />
 
         {/* Public routes for captain login and signup */}
-        <Route path='/captain-login' element={<Captainlogin />} />
+        <Route path='/captain-login' element={<CaptainLogin />} />
         <Route path='/captain-signup' element={<CaptainSignup />} />
 
         {/* Route for the Riding page */}
