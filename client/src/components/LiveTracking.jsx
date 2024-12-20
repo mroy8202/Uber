@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { LoadScript, GoogleMap, Marker } from '@react-google-maps/api'
+import { LoadScript, GoogleMap, MarkerF } from '@react-google-maps/api'
 
 const containerStyle = {
     width: '100%',
@@ -39,7 +39,6 @@ const LiveTracking = () => {
             navigator.geolocation.getCurrentPosition((position) => {
                 const { latitude, longitude } = position.coords;
 
-                console.log('Position updated:', latitude, longitude);
                 setCurrentPosition({
                     lat: latitude,
                     lng: longitude
@@ -60,7 +59,7 @@ const LiveTracking = () => {
                 center={currentPosition}
                 zoom={15}
             >
-                <Marker position={currentPosition} />
+                <MarkerF position={currentPosition} />
             </GoogleMap>
         </LoadScript>
     )

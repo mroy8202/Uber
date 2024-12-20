@@ -11,7 +11,7 @@ import Home from './pages/Home';
 import UserProtectWrapper from './pages/UserProtectWrapper';
 import UserLogout from './pages/UserLogout';
 import CaptainHome from './pages/CaptainHome';
-import CaptainProtectWrapper from './pages/CaptainProtectWrapper';
+import CaptainProtectedWrapper from './pages/CaptainProtectedWrapper';
 import CaptainLogout from './pages/CaptainLogout';
 import Riding from './pages/Riding';
 import CaptainRiding from './pages/CaptainRiding';
@@ -59,16 +59,16 @@ const App = () => {
 
         {/* Protected route for captain home page */}
         <Route path='/captain-home' element={
-          <CaptainProtectWrapper>
+          <CaptainProtectedWrapper>
             <CaptainHome />
-          </CaptainProtectWrapper>
+          </CaptainProtectedWrapper>
         } />
 
         {/* Protected route for captain logout */}
         <Route path='/captain/logout' element={
-          <CaptainProtectWrapper>
+          <CaptainProtectedWrapper>
             <CaptainLogout />
-          </CaptainProtectWrapper>
+          </CaptainProtectedWrapper>
         } />
       </Routes>
     </div>
