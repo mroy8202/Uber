@@ -1,11 +1,11 @@
 import React, { useContext, useRef, useState, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import LocationSearchPanel from "../components/LocationSearchPanel";
-import VehiclePanel from "../components/VehiclePanel";
-import ConfirmedRide from "../components/ConfirmedRide";
-import LookingForDriver from "../components/LookingForDriver";
-import WaitingForDriver from "../components/WaitingForDriver";
+import LocationSearchPanel from "../components/LocationSearchPanel.jsx";
+import VehiclePanel from "../components/VehiclePanel.jsx";
+import ConfirmedRide from "../components/ConfirmedRide.jsx";
+import LookingForDriver from "../components/LookingForDriver.jsx";
+import WaitingForDriver from "../components/WaitingForDriver.jsx";
 import axios from "axios";
 import {SocketContext} from "../context/SocketContext.jsx";
 import {useNavigate} from "react-router-dom";

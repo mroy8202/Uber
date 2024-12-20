@@ -1,10 +1,10 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import CaptainDetails from "../components/CaptainDetails";
-import RidePopUp from "../components/RidePopUp";
+import CaptainDetails from "../components/CaptainDetails.jsx";
+import RidePopUp from "../components/RidePopUp.jsx";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import ConfirmRidePopUp from "../components/ConfirmRidePopUp";
+import ConfirmRidePopUp from "../components/ConfirmRidePopUp.jsx";
 import { SocketContext } from "../context/SocketContext.jsx";
 import axios from "axios";
 
